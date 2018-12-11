@@ -1,0 +1,33 @@
+import java.util.Date;
+
+public class Book {
+    private int pages;
+    private Date released;
+    private String title;
+    private String isbn;
+
+    public Book(int pages, Date released, String title, String isbn){
+        this.pages=pages;
+        this.released=released;
+        this.title=title;
+        this.isbn=isbn;
+    }
+    public Book(){}
+
+    public int getPages(){
+        return pages;
+    }
+
+    public Date getReleased(){
+        return released;
+    }
+
+    public String getTitle(){
+        return title;
+    }
+
+    public String getIsbn(){
+        return isbn;
+    }
+
+}
