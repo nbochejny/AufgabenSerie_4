@@ -18,5 +18,16 @@ public class Abruf {
         for(Book x : Liebling){
             System.out.println(x.getTitle()+ " hat "+ x.getPages()+ " Seiten und folgende ISBN: "+x.getIsbn());
         }
+        List<Paperbook> paperbooks = new ArrayList<>();
+
+        paperbooks.add(new Paperbook(200, datum, "My Paperbook 1", "0000-00000-0000", "nothing", "April"));
+        paperbooks.add(new Paperbook(210, datum, "My Paperbook 2", "0000-00000-0000", "nothing", "April"));
+        paperbooks.add(new Paperbook(240, datum, "My Paperbook 3", "0000-00000-0000", "nothing", "January"));
+        paperbooks.add(new Paperbook(100, datum, "My Paperbook 4", "0000-00000-0000", "nothing", "March"));
+        paperbooks.add(new Paperbook(140, datum, "My Paperbook 5", "0000-00000-0000", "nothing", "October"));
+
+        for (Paperbook x : paperbooks){
+            System.out.println(x.getTitle()+ " hat "+ x.getPages()+" Seiten und folgende ISBN: "+ x.getIsbn()+ " zusätzlich ist es im Monat "+x.getMonth()+" erschienen");
+        }
     }
 }
